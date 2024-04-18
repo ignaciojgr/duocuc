@@ -23,18 +23,26 @@ if choice==2:
     print("ejecutándose 'usuario/contraseña'")
     user1="Pedro"
     user2="Angel"
-    contraseñauser1=1234
+    contraseñauser1="1234"
     contraseñauser2="a4s1"
 
     usuarioNuevo=input("ingresa tu usuario\n")
     contraseñaNueva=input("ingresa tu contraseña\n")
-    if usuarioNuevo==user1  and contraseñaNueva==contraseñauser1 or usuarioNuevo==user2 and contraseñaNueva=="a4s1":
+    if usuarioNuevo==user1  and contraseñaNueva==contraseñauser1:
         print("sus credenciales son válidas")
-    else : 
-        while usuarioNuevo!=user1  and contraseñaNueva!=contraseñauser1 or usuarioNuevo!=user2 and contraseñaNueva!="a4s1":
+    elif usuarioNuevo==user2 and contraseñaNueva==contraseñauser2:
+        print("sus credenciales son válidas")
+    else: 
             print("Por favor, vuelva a ingresar sus credenciales")
             usuarioNuevo=input("ingresa tu usuario \n")
             contraseñaNueva=input("ingresa tu contraseña \n")
+            if  usuarioNuevo==user1  and contraseñaNueva==contraseñauser1:
+                print("sus credenciales son válidas")
+            elif usuarioNuevo==user2 and contraseñaNueva==contraseñauser2:
+                print("sus credenciales son válidas")
+            else:
+                print("ha bloqueado el número de intentos")
+
  
  
 
