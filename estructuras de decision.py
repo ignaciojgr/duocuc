@@ -14,6 +14,8 @@ op5=5
 
 if choice==1:
     print("ejecutandose 'sistema de edad'\n")
+if choice==1:
+    print("ejecutandose 'sistema de edad'\n")
     edadUsuario = int(input("ingresa tu edad!:\n"))
     if edadUsuario >= 18: 
         print("usted cuenta con la mayoria de edad c: ")
