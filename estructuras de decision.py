@@ -12,15 +12,18 @@ op3=3
 op4=4
 op5=5
 
+#Esta es la estructura de decisión del sistema de edad
 if choice==1:
-    print("ejecutandose 'sistema de edad'\n")
+    print("Ejecutándose 'sistema de edad'\n")
 if choice==1:
-    print("ejecutandose 'sistema de edad'\n")
+    print("Ejecutandose 'sistema de edad'\n")
     edadUsuario = int(input("ingresa tu edad!:\n"))
     if edadUsuario >= 18: 
-        print("usted cuenta con la mayoria de edad c: ")
+        print("Usted cuenta con la mayoria de edad c: ")
     else:
-        print("usted no cuenta con la mayoria de edad :c")
+        print("Usted no cuenta con la mayoria de edad :c")
+
+#Esta es la estructura de decisión de la validación de usuario y contraseña
 if choice==2: 
     print("ejecutándose 'usuario/contraseña'")
     user1="Pedro"
@@ -28,29 +31,35 @@ if choice==2:
     contraseñauser1="1234"
     contraseñauser2="a4s1"
 
-    usuarioNuevo=input("ingresa tu usuario\n")
-    contraseñaNueva=input("ingresa tu contraseña\n")
+    usuarioNuevo=input("Ingrese su usuario\n")
+    contraseñaNueva=input("Ingrese su contraseña\n")
     if usuarioNuevo==user1  and contraseñaNueva==contraseñauser1:
-        print("sus credenciales son válidas")
+        print("Sus credenciales son válidas")
     elif usuarioNuevo==user2 and contraseñaNueva==contraseñauser2:
-        print("sus credenciales son válidas")
+        print("Sus credenciales son válidas")
     else: 
             print("Por favor, vuelva a ingresar sus credenciales")
-            usuarioNuevo=input("ingresa tu usuario \n")
-            contraseñaNueva=input("ingresa tu contraseña \n")
+            usuarioNuevo=input("Ingrese su usuario \n")
+            contraseñaNueva=input("Ingrese su contraseña \n")
             if  usuarioNuevo==user1  and contraseñaNueva==contraseñauser1:
-                print("sus credenciales son válidas")
+                print("Sus credenciales son válidas")
             elif usuarioNuevo==user2 and contraseñaNueva==contraseñauser2:
-                print("sus credenciales son válidas")
+                print("Sus credenciales son válidas")
             else:
-                print("ha bloqueado el número de intentos")
+                print("Ha bloqueado el número de intentos")
 
- 
- 
+#Esta es la estructura de decisión del sistema de notas
+if choice==3:
+    print("Ejecutándose 'notas' \n ")
+    cant_notas=int(input("Ingrese la cantidad de notas a ingresar"))
+    tnota=0.0
+    for i in range(cant_notas):
+        nota=input("Ingrese la nota")
+        int(nota)
+        float(nota)
+        tnota=nota+tnota
+    print("El promedio entre la cantidad de notas ingresadas son",tnota/cant_notas)
 
-
-if choice== 3:
-    print("bienvenido a la plataforma! \n ")
 
 #if choice== 4:
 
