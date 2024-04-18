@@ -58,6 +58,11 @@ if choice==3:
         tnota=nota+tnota
     print("El promedio entre la cantidad de notas ingresadas son",tnota/cant_notas)
 
+#Esta es la estructura de decisión del formulario sobre animales
+if choice==4:
+    print("Ejecutándose 'Animales'")
+    print("¿Cuál de los siguientes animales viven en el agua?")
+    print("1. Perro\n2. Cocodrilo\n3. Conejo\n4.Tiburón")
 
 #if choice== 4:
 
