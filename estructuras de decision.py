@@ -54,9 +54,7 @@ if choice==3:
     cant_notas=int(input("Ingrese la cantidad de notas a ingresar"))
     tnota=0.0
     for i in range(cant_notas):
-        nota=input("Ingrese la nota")
-        int(nota)
-        float(nota)
+        nota=float(input("Ingrese la nota en el siguiente formato: 2.0, 3.0, etc"))
         tnota=nota+tnota
     print("El promedio entre la cantidad de notas ingresadas son",tnota/cant_notas)
 
