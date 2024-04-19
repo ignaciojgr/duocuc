@@ -63,6 +63,7 @@ if choice==4:
     print("Ejecutándose 'Animales'")
     print("¿Cuál de los siguientes animales viven en el agua?")
     print("1. Perro\n2. Cocodrilo\n3. Conejo\n4.Tiburón")
+    if 
 
 #if choice== 4:
 
