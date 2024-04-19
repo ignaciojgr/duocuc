@@ -1,4 +1,5 @@
 #procesamiento de bultos
+"""
 p_total=0
 peso=0
 bulto=0
@@ -23,6 +24,9 @@ for i in cant:
     b_livianoT=b_livianoT+b_liviano
     b_pesadoT=b_pesadoT+b_pesado
     p_total=peso+p_total
+"""""
+for i in range(0,32):
+    print("pata")
     
 
 
