@@ -33,7 +33,7 @@ for i in range(cant):
          if peso>=6.0 and peso<=10.9:
             b_pesado=1
             print("\n",bulto," Normal  $",p_pesado)
-
+            
     except ZeroDivisionError:
             while peso>=11.0:
                 peso=float(input("El peso no puede procesarse, por favor, intente con un peso entre 1.0 y 10.9:\n"))
