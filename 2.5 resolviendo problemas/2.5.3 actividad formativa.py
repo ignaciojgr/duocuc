@@ -9,7 +9,7 @@ while end==1:
     if op==1:
         print("Usted tiene una deuda de: $",deuda)
         pago=int(input("Monto a pagar:\t$"))
-        saldo=deuda-pago
+        saldo=pago-deuda
         print("Nuevo saldo de la tarjeta:\t",saldo)
     if op==2:
         cantidad_simulada=int(input("Por favor, ingrese la cantidad de compras que quiere simular:\t"))
@@ -17,8 +17,7 @@ while end==1:
             numero_de_compra=i+1
             print("Compra número 1:\n================")
             monto_de_compra=int(input("Ingrese el monto de la compra:\t"))
-            saldo_compra=saldo-monto_de_compra
-            nuevo_saldo=nuevo_saldo-saldo_compra
+            nuevo_saldo=saldo-monto_de_compra
             saldo=nuevo_saldo
             print("Su nuevo saldo es:\t",nuevo_saldo)
             
