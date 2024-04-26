@@ -34,12 +34,13 @@ while end==1:
                     print("Hubo un error, debe ingresar sólo número, no texto.")
                     continue
                 else:
-                    saldo1=pago-deuda
-                    print("Nuevo saldo de la tarjeta:\t",saldo1)
-                    if pago>0:
-                        nueva_deuda=abs(deuda-saldo1)
-                        deuda=nueva_deuda
+                    saldo1=(pago-deuda)
+                    print("Nuevo saldo de la tarjeta:\t",cupomax-saldo1)
                     break
+            if pago>0:
+                nueva_deuda=deuda-saldo1
+                deuda=nueva_deuda
+                
         if saldo1>cupomax:
             print("El cupo máximo de su tarjeta de crédito es:\t",cupomax,"\nPor lo tanto, no puede excederlo")
             saldo1=cupomax
