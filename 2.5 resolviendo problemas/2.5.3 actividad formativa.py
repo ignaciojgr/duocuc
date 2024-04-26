@@ -18,8 +18,6 @@ while end==1:
             if pago>0:
                 nueva_deuda=abs(deuda-saldo1)
                 deuda=nueva_deuda
-        
-    
     if op==2:
         cantidad_simulada=int(input("Por favor, ingrese la cantidad de compras que quiere simular:\t"))
         nuevo_saldo=saldo1
@@ -29,7 +27,6 @@ while end==1:
             monto_de_compra=int(input("Ingrese el monto de la compra:\t"))
             nuevo_saldo=nuevo_saldo-monto_de_compra
             print("Su nuevo saldo es:\t",nuevo_saldo)
-    
     if op==3:
         end=2
 print("Cierre de sesión exitoso, vuelva pronto!")
