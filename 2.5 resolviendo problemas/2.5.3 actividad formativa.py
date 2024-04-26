@@ -60,6 +60,4 @@ while end==1:
             print("Su nuevo saldo es:\t",nuevo_saldo)
     if op==3:
         end=2
-print("Cierre de sesión exitoso, vuelva pronto!")
-
-            
+print("Cierre de sesión exitoso, vuelva pronto!") 
