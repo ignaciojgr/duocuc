@@ -4,8 +4,9 @@ saldo=500000
 nuevo_saldo=0
 while end==1:
     print("Bienvenido al menú del Banco de DuocUC")
-    print("\n=============\nSeleccione una opción:\n1. Pagar monto\n2. Simular una compra\n3. Salir")
-    op=int(input("Seleccione una opción:\t"))
+    try:
+        print("\n=============\nSeleccione una opción:\n1. Pagar monto\n2. Simular una compra\n3. Salir")
+        op=int(input("Seleccione una opción:\t"))
     if op==1:
         print("Usted tiene una deuda de: $ ",deuda)
         if deuda==0:
