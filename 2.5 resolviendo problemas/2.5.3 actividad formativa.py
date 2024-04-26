@@ -15,7 +15,7 @@ while end==1:
         else:
             break
     if op==1:
-        print("Usted tiene una deuda de: $ ",deuda)
+        print("==============\nUsted tiene una deuda de: $ ",deuda)
         if deuda==0:
             print("Usted no tiene que pagar más")
             print("Su cupo disponible es \t$ ",cupomax)
@@ -31,7 +31,6 @@ while end==1:
             while True:
                 try:
                     pago=int(input("Monto a pagar:\t$ "))
-                    
                 except ValueError:
                     print("Hubo un error, debe ingresar sólo número, no texto.")
                     continue
@@ -39,7 +38,7 @@ while end==1:
                     if pago>0:
                         saldo1=deuda-pago
                         deuda=saldo1
-                        print("Nuevo saldo de la tarjeta:\t",cupomax-saldo1)
+                        print("=============\nNuevo saldo de la tarjeta:\t",cupomax-saldo1,"\n===========")
                     break
                 
         if saldo1>cupomax:
@@ -57,7 +56,7 @@ while end==1:
         nuevo_saldo=cupomax-saldo1
         for i in range(cantidad_simulada):
             numero_de_compra=i+1
-            print("Compra número ",numero_de_compra," :\n================")
+            print("=============\nCompra número ",numero_de_compra," :\n================")
             monto_de_compra=int(input("Ingrese el monto de la compra:\t"))
             nuevo_saldo=nuevo_saldo-monto_de_compra
             print("Su nuevo saldo es:\t",nuevo_saldo)
