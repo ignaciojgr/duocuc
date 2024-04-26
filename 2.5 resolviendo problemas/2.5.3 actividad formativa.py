@@ -33,7 +33,7 @@ while end==1:
                     print("Hubo un error, debe ingresar sólo número, no texto.")
                     continue
                 else:
-                    saldo1=abs(pago-deuda)
+                    saldo1=pago-deuda
                     print("Nuevo saldo de la tarjeta:\t",saldo1)
                     if pago>0:
                         nueva_deuda=abs(deuda-saldo1)
