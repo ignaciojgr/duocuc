@@ -54,7 +54,7 @@ while end==1:
                 continue
             else:
                 break
-        nuevo_saldo=saldo1
+        nuevo_saldo=cupomax-saldo1
         for i in range(cantidad_simulada):
             numero_de_compra=i+1
             print("Compra número ",numero_de_compra," :\n================")
