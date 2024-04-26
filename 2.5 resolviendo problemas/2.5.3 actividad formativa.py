@@ -1,6 +1,6 @@
 end=1
 deuda=100000
-saldo=500000
+cupomax=100000
 nuevo_saldo=0
 while end==1:
     print("Bienvenido al menú del Banco de DuocUC")
@@ -17,6 +17,7 @@ while end==1:
         print("Usted tiene una deuda de: $ ",deuda)
         if deuda==0:
             print("Usted no tiene que pagar más")
+            print("Su cupo disponible es \t$ ",cupomax)
             while True:
                 try:
                     end=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
@@ -39,9 +40,9 @@ while end==1:
                         nueva_deuda=abs(deuda-saldo1)
                         deuda=nueva_deuda
                     break
-        if saldo1>saldo:
-            print("El cupo máximo de su tarjeta de crédito es:\t",saldo,"\nPor lo tanto, no puede excederlo")
-            saldo1=saldo
+        if saldo1>cupomax:
+            print("El cupo máximo de su tarjeta de crédito es:\t",cupomax,"\nPor lo tanto, no puede excederlo")
+            saldo1=cupomax
     if op==2:
         while True:
             try:
