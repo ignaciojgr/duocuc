@@ -5,7 +5,7 @@ nuevo_saldo=0
 saldo1=0
 while end==1:
     print("Bienvenido al menú del Banco de DuocUC")
-    print("\n=============\nSeleccione una opción:\n1. Pagar monto\n2. Simular una compra\n3. Salir")
+    print("=============\nSeleccione una opción:\n1. Pagar monto\n2. Simular una compra\n3. Salir")
     while True:
         try:
             op=int(input("Seleccione una opción:\t"))
