@@ -7,6 +7,10 @@ while end==1:
     try:
         print("\n=============\nSeleccione una opción:\n1. Pagar monto\n2. Simular una compra\n3. Salir")
         op=int(input("Seleccione una opción:\t"))
+    except ValueError:
+        op=int(input("Por favor, sólo ingrese el número de opción, no texto"))
+        while ValueError:
+            op=int(input("Por favor, sólo ingrese el número de opción, no texto"))
     if op==1:
         print("Usted tiene una deuda de: $ ",deuda)
         if deuda==0:
