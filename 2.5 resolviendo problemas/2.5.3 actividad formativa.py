@@ -4,13 +4,15 @@ saldo=500000
 nuevo_saldo=0
 while end==1:
     print("Bienvenido al menú del Banco de DuocUC")
-    try:
-        print("\n=============\nSeleccione una opción:\n1. Pagar monto\n2. Simular una compra\n3. Salir")
-        op=int(input("Seleccione una opción:\t"))
-    except ValueError:
-        op=int(input("Por favor, sólo ingrese el número de opción, no texto"))
-        while ValueError:
-            op=int(input("Por favor, sólo ingrese el número de opción, no texto"))
+    print("\n=============\nSeleccione una opción:\n1. Pagar monto\n2. Simular una compra\n3. Salir")
+    while True:
+        try:
+            op=int(input("Seleccione una opción:\t"))
+        except ValueError:
+            print("Hubo un error, debe ingresar sólo número, no texto.")
+            continue
+        else:
+            break
     if op==1:
         print("Usted tiene una deuda de: $ ",deuda)
         if deuda==0:
