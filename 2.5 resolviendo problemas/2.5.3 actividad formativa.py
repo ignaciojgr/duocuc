@@ -17,16 +17,37 @@ while end==1:
         print("Usted tiene una deuda de: $ ",deuda)
         if deuda==0:
             print("Usted no tiene que pagar más")
-            end=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+            while True:
+                try:
+                    end=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+                except ValueError:
+                    print("Hubo un error, debe ingresar sólo número, no texto.")
+                    continue
+                else:
+                    break
         if deuda>0:
-            pago=int(input("Monto a pagar:\t$ "))
-            saldo1=abs(pago-deuda)
-            print("Nuevo saldo de la tarjeta:\t",saldo1)
-            if pago>0:
-                nueva_deuda=abs(deuda-saldo1)
-                deuda=nueva_deuda
+            while True:
+                try:
+                    pago=int(input("Monto a pagar:\t$ "))
+                except ValueError:
+                    print("Hubo un error, debe ingresar sólo número, no texto.")
+                    continue
+                else:
+                    saldo1=abs(pago-deuda)
+                    print("Nuevo saldo de la tarjeta:\t",saldo1)
+                    if pago>0:
+                        nueva_deuda=abs(deuda-saldo1)
+                        deuda=nueva_deuda
+                    break
     if op==2:
-        cantidad_simulada=int(input("Por favor, ingrese la cantidad de compras que quiere simular:\t"))
+        while True:
+            try:
+                cantidad_simulada=int(input("Por favor, ingrese la cantidad de compras que quiere simular:\t"))
+            except ValueError:
+                print("Hubo un error, debe ingresar sólo número, no texto.")
+                continue
+            else:
+                break
         nuevo_saldo=saldo1
         for i in range(cantidad_simulada):
             numero_de_compra=i+1
