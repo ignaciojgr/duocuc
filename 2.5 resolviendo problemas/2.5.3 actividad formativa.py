@@ -53,13 +53,16 @@ while end==1:
                 continue
             else:
                 break
-        nuevo_saldo=cupomax-saldo1
+        nuevo_saldo=cupomax-deuda
         for i in range(cantidad_simulada):
             numero_de_compra=i+1
             print("=============\nCompra número ",numero_de_compra," :\n================")
             monto_de_compra=int(input("Ingrese el monto de la compra:\t"))
             nuevo_saldo=nuevo_saldo-monto_de_compra
             print("Su nuevo saldo es:\t",nuevo_saldo)
+            if nuevo_saldo<0:
+                print("Usted ha excedido el cupo de su tarjeta de crédito")
+                print("Su nueva deuda es de:\t",abs(nuevo_saldo))
     if op==3:
         end=2
 print("=============\nCierre de sesión exitoso, vuelva pronto!") 
