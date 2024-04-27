@@ -35,6 +35,32 @@ while end==1:
         if sala%2!=0:
             print("Luces de la sala encendidas...")
         op=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+    if op==3:
+        pasillo+=1
+        if pasillo%2==0:
+            print("Luces del pasillo apagadas...")
+        if pasillo%2!=0:
+            print("Luces del pasillo encendidas...")
+        op=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+    if op==4:
+        jardin+=1
+        if jardin%2==0:
+            print("Luces del jardín apagadas...")
+        if jardin%2!=0:
+            print("Luces del jardín encendidas...")
+        op=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+    if op==5:
+        patio=2
+        sala=2
+        jardin=2
+        pasillo=2
+        print("Todas las luces fueron encendidas...")
+    if op==6:
+        patio=1
+        sala=1
+        jardin=1
+        pasillo=1
+        print("Todas las luces fueron apagadas...")
     if op==7:
         end=2
         print("Saliendo del sistema...")
