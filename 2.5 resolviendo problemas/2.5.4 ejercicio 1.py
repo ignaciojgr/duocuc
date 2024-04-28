@@ -30,12 +30,16 @@ while end==1:
             print(luz_patio)
         while True:
             try:
-                op=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+                continuar=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
             except ValueError:
                 print("Hubo un error, debe ingresar sólo número, no texto.")
                 continue
             else:
                 break
+        if continuar==1:
+            continue
+        if continuar==2:
+            end=2
     if op==2:
         sala+=1
         if sala%2==0:
@@ -46,12 +50,16 @@ while end==1:
             print(luz_sala)
         while True:
             try:
-                op=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+                continuar=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
             except ValueError:
                 print("Hubo un error, debe ingresar sólo número, no texto.")
                 continue
             else:
                 break
+        if continuar==1:
+            continue
+        if continuar==2:
+            end=2
     if op==3:
         pasillo+=1
         if pasillo%2==0:
@@ -62,12 +70,16 @@ while end==1:
             print(luz_pasillo)
         while True:
             try:
-                op=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+                continuar=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
             except ValueError:
                 print("Hubo un error, debe ingresar sólo número, no texto.")
                 continue
             else:
                 break
+        if continuar==1:
+            continue
+        if continuar==2:
+            end=2
     if op==4:
         jardin+=1
         if jardin%2==0:
@@ -78,12 +90,16 @@ while end==1:
             print(luz_jardin)
         while True:
             try:
-                op=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+                continuar=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
             except ValueError:
                 print("Hubo un error, debe ingresar sólo número, no texto.")
                 continue
             else:
                 break
+        if continuar==1:
+            continue
+        if continuar==2:
+            end=2
     if op==5:
         if patio%2==0:
             patio+=1
@@ -103,12 +119,16 @@ while end==1:
             print("Luces del jardín encendidas")
         while True:
             try:
-                op=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+                continuar=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
             except ValueError:
                 print("Hubo un error, debe ingresar sólo número, no texto.")
                 continue
             else:
                 break
+        if continuar==1:
+            continue
+        if continuar==2:
+            end=2
     if op==6:
         if patio%2!=0:
             patio+=1
@@ -128,12 +148,16 @@ while end==1:
             print("Luces del jardín apagadas")
         while True:
             try:
-                op=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
+                continuar=int(input("Presione 1 para seguir en el menú o 2 para salir:\t"))
             except ValueError:
                 print("Hubo un error, debe ingresar sólo número, no texto.")
                 continue
             else:
                 break
+        if continuar==1:
+            continue
+        if continuar==2:
+            end=2
     if op==7:
         end=2
         print("Saliendo del sistema...")
