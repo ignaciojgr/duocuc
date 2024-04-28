@@ -1,3 +1,5 @@
+#Error en input de salida de cada opción. Se debe asignar una variable distinta a la variable de entrada de la opción para que no se repita el ciclo de entrada de la opción.
+
 patio=0
 sala=0
 jardin=0
