@@ -135,6 +135,7 @@ while end==1:
     if op==7:
         end=2
         print("Saliendo del sistema...")
+        print("========================\n¡Hasta luego!")
         break
     
 
