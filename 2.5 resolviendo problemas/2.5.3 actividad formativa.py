@@ -45,6 +45,7 @@ while end==1:
             print("El cupo máximo de su tarjeta de crédito es:\t",cupomax,"\nPor lo tanto, no puede excederlo")
             saldo1=cupomax
     if op==2:
+        print("==============\nUsted tiene una deuda de: $ ",deuda)
         while True:
             try:
                 cantidad_simulada=int(input("Por favor, ingrese la cantidad de compras que quiere simular:\t"))
@@ -62,7 +63,7 @@ while end==1:
             print("Su nuevo saldo es:\t",nuevo_saldo)
             if nuevo_saldo<0:
                 print("Usted ha excedido el cupo de su tarjeta de crédito")
-                print("Su nueva deuda es de:\t",abs(nuevo_saldo))
+                print("Su nueva deuda es de:\t",abs(nuevo_saldo-100000))
     if op==3:
         end=2
 print("=============\nCierre de sesión exitoso, vuelva pronto!") 
