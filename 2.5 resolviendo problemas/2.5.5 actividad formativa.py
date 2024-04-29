@@ -47,6 +47,7 @@ while end==True:
                 elif op_menu1==3:
                     print("Cerrando sesión...")
                     end=2
+                    break
                 else:
                     print("Usuario o contraseña incorrectos")
                     break
@@ -79,6 +80,7 @@ while end==True:
                 elif op_menu2==3:
                     print("Cerrando sesión...")
                     end=2
+                    break
                 else:
                     print("Usuario o contraseña incorrectos")
                     break
@@ -111,6 +113,7 @@ while end==True:
                 elif op_menu3==3:
                     print("Cerrando sesión...")
                     end=2
+                    break
                 else:
                     print("Usuario o contraseña incorrectos")
                     break
@@ -135,6 +138,4 @@ while end==True:
         end=2
     else:
         print("Opción no válida.\nUsted será redirigido al menú de inicio de sesión...")
-        
-    
 print("Cierre de sesión exitoso.")
