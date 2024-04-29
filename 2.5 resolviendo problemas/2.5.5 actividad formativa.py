@@ -26,14 +26,23 @@ while end==True:
         print("Registro de usuario")
         usuario=input("Ingrese el usuario que desea registrar: ")
         contraseña=input("Ingrese la contraseña que desea registrar: ")
+        if usuario1==0:
+            usuario1=usuario
+            contraseña1=contraseña
+        elif usuario2==0:
+            usuario2=usuario
+            contraseña2=contraseña
+        elif usuario3==0:
+            usuario3=usuario
+            contraseña3=contraseña
         print("Usuario registrado exitosamente.")
-        print("Usuario:",usuario)
-        print("Contraseña:",contraseña)
+        print("Usuario: ",usuario)
+        print("Contraseña: ",contraseña)
     elif opcion==3:
         print("Saliendo del sistema...")
         end=2
     else:
-        print("Opción no válida.\nUsted será redirigido al menú de inicio de sesión.")
+        print("Opción no válida.\nUsted será redirigido al menú de inicio de sesión...")
         
     
 print("Cierre de sesión exitoso.")
