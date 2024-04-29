@@ -5,7 +5,7 @@ usuario3=0
 contraseña1=0
 contraseña2=0
 contraseña3=0
-
+#Faltan agregar estructuras de control para que no se puedan registrar usuarios con el mismo nombre. Además, se deben agregar estructuras de "try, except" para que el programa no se caiga si el usuario ingresa un valor no numérico en los campos de teléfono, correo, opciones de menú, etc.
 while end==True:
     print("Bienvenido al menú de inicio de sesión")
     print(("1. Iniciar sesión\n2. Registrar usuario\n3. Salir"))
