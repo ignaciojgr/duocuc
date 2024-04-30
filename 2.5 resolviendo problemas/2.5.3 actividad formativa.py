@@ -39,8 +39,7 @@ while end==1:
                         saldo1=deuda-pago
                         deuda=saldo1
                         print("===============\nNuevo saldo de la tarjeta:\t",cupomax-saldo1,"\n===========")
-                    break
-                
+                    break       
         if saldo1>cupomax:
             print("El cupo máximo de su tarjeta de crédito es:\t",cupomax,"\nPor lo tanto, no puede excederlo")
             saldo1=cupomax
