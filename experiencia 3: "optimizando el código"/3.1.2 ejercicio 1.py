@@ -1,6 +1,4 @@
-nombre1=input("Ingrese su nombre:\t")
-nombre2=input("Ingrese su nombre:\t")
-nombre3=input("Ingrese su nombre:\t")
-lista_nombres=[nombre1,nombre2,nombre3]
-print("Los nombres ingresados son:",lista_nombres)
-print("Fin del programa")
+lista_nombres=[1,2,3]
+for i in range(0,len(lista_nombres)):
+    list.append(lista_nombres[i])
+    nombres=input("Ingrese un nombre: ")
