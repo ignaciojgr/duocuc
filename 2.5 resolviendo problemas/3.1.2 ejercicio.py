@@ -5,9 +5,13 @@ def obtener_datos(prompt, num_datos):
         lista_datos.append(dato)
     return lista_datos
 
-num_datos = 3
+num_datos = int(input("Ingrese la cantidad de usuarios que desea registrar: "))
 lista_nombres = obtener_datos("Ingrese un nombre: ", num_datos)
 lista_apellidos = obtener_datos("Ingrese un apellido: ", num_datos)
+
+lista_usuarios=[]
+for i in range(num_datos):
+    usuario1=lista_nombres[i]+lista_apellidos[i]
 
 lista_combinada = []
 for i in range(max(len(lista_nombres), len(lista_apellidos))):
