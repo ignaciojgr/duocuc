@@ -1,13 +1,15 @@
-# Crie uma lista vazia chamada 'bus'
+#Esta es una lista vacía.
 bus = []
 
-# Use um loop for para adicionar 10 sublistas à lista 'bus'
-for i in range(10):
+#Este es un bucle que se ejecuta 10 veces.
+for i in range(20):
+    #Dentro del bucle, se crea una lista vacía llamada row. 
     row = []
-    for j in range(4):
-        row.append(i*4 + j + 1)
+    for j in range(5):
+        #Dentro del bucle anidado, se añade un número a la lista row.
+        row.append(i*4 + j)
     bus.append(row)
 
-# Use outro loop for para imprimir os números dos assentos
+#Este bucle recorre cada row en bus.
 for row in bus:
     print(*(f"{seat:2d}" for seat in row[:2]), " ", *(f"{seat:2d}" for seat in row[2:]))
