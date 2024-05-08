@@ -5,7 +5,7 @@ bus = []
 for i in range(20):
     #Dentro del bucle, se crea una lista vacía llamada row. 
     row = []
-    for j in range(5):
+    for j in range(4):
         #Dentro del bucle anidado, se añade un número a la lista row.
         row.append(i*4 + j)
     bus.append(row)
