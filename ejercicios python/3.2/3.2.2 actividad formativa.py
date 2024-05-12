@@ -12,4 +12,38 @@ def caso_1():
     print("El nombre más largo es: ",max_nombre)
 
 def caso_2():
+    lista_nombres = []
+    lista_apellidos = []
+
+    for i in range(3):
+        nombre_ingresado = input("Ingrese un nombre:\t")
+        apellido_ingresado = input("Ingrese un apellido:\t")
+        lista_nombres.append(nombre_ingresado)
+        lista_apellidos.append(apellido_ingresado)
+
+    lista_nombres.sort()
+    lista_apellidos.sort()
+
+    lista_ordenada = list(zip(lista_nombres, lista_apellidos))
+
+    print("Nombres y apellidos ordenados: ")
+    for nombre, apellido in lista_ordenada:
+        print(nombre, apellido)
+
+def caso_3():
+    lista_nombres=[]
+    while True:
+        lista_nombres.append(input("Ingrese un nombre: "))
+        continuar=int(input("Desea ingresar otro nombre? (1: Sí, 0: No) "))
+        if continuar==1:
+            continue
+        else:
+            break
+    mas_corto = min(lista_nombres, key=len)
+    lista_nombres.remove(mas_corto)
+    print(*lista_nombres)
+caso_1()
+caso_2()
+caso_3()
+
     
