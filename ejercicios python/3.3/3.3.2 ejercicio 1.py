@@ -15,3 +15,21 @@
 
 import csv
 import json
+mayores=[]
+#Esta línea abre el archivo 'datos.csv' en modo lectura y lo asigna a la variable archivo_csv.
+with open('datos.csv') as archivo_csv:
+    lector_csv = csv.reader(archivo_csv)
+    #Esta línea lee la primera línea del archivo CSV, que contiene los nombres de las columnas, y la asigna a la variable encabezado.
+    next(lector_csv)
+    for linea in lector_csv:
+        nombre, edad, comuna = linea
+        edad = int(edad)
+        if edad >= 25:
+            estado = 'mayor'
+            mayores.append({'nombre': nombre, 'edad': edad, 'comuna': comuna, 'estado': estado})
+        else:
+            estado = 'menor'
+        print(f'{nombre} tiene {edad} años, es {estado} de edad y vive en {comuna}.')
+#Esta línea abre el archivo 'mayores.json' en modo escritura y lo asigna a la variable archivo_json.
+with open('mayores.json', 'w') as archivo_json:
+    json.dump(mayores, archivo_json, indent=4)
