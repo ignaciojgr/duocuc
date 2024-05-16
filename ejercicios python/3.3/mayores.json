@@ -1,0 +1,14 @@
+[
+    {
+        "nombre": "Mar\u00eda",
+        "edad": 30,
+        "comuna": "Concepci\u00f3n",
+        "estado": "mayor"
+    },
+    {
+        "nombre": "Estela",
+        "edad": 25,
+        "comuna": "Puerto Montt",
+        "estado": "mayor"
+    }
+]
