@@ -3,6 +3,8 @@
 #digito verificado sean 92, 95 y 84
 #Los datos deben ser leídos desde el archivo csv llamado “listadoRun.csv” y depositados
 #en el archivo llamado “ganadores.json”
+import csv
+import json
 listadoRun=[]
 ganadores=[]
 with open('listadoRun.csv') as archivo_csv:
